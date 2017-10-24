@@ -43,5 +43,7 @@
 
 (global-set-key (kbd "C-c C-x C-c") 'save-buffers-kill-emacs)
 
+(setq require-final-newline t)
+
 (provide 'random)
 ;;; random.el ends here
