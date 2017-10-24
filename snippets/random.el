@@ -7,7 +7,6 @@
 ;; No more menu bar
 ;;
 (menu-bar-mode -1)
-(setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
 (global-prettify-symbols-mode t)
 (setq column-number-mode t)
 

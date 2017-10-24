@@ -47,6 +47,7 @@
 (require 'flycheck-enable)
 (require 'parens)
 (require 'python-enable)
+(require 'backups)
 
 (provide 'init)
 ;;; init.el ends here
