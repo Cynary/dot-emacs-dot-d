@@ -4,9 +4,7 @@
 ;;
 ;;; Code:
 
-;; (elpy-enable)
 (require 'elpy)
-
 (defun python-layout ()
   "Automatic newlines in python, when 'electric-layout-mode' is enabled."
   (setq-local electric-layout-rules
@@ -17,6 +15,7 @@
 
 (add-hook 'python-mode-hook 'python-layout)
 (add-hook 'python-mode-hook 'electric-layout-mode)
+(add-hook 'python-mode-hook (lambda () (set-fill-column 79)))
 (add-hook 'python-mode-hook 'elpy-mode)
 
 (provide 'python-enable)

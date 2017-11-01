@@ -26,7 +26,7 @@
  '(custom-theme-directory (expand-file-name "./themes" init-path))
  '(package-selected-packages
    (quote
-    (elpy whitespace-cleanup-mode flycheck-clang-analyzer autopair flycheck smartparens helm-projectile projectile helm helm-ebdb))))
+    (puppet-mode magit elpy whitespace-cleanup-mode flycheck-clang-analyzer autopair flycheck smartparens helm-projectile projectile helm helm-ebdb))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -48,6 +48,7 @@
 (require 'parens)
 (require 'python-enable)
 (require 'backups)
+(require 'highlight_words)
 
 (provide 'init)
 ;;; init.el ends here

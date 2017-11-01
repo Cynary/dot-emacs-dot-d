@@ -31,6 +31,7 @@
 			       (block-close . (before))
 			       (class-open . (before))
 			       (inline-open . (before))
+			       (brace-list-open . (before))
 			      ))
     (c-hanging-colons-alist . (
 			       (member-init-intro . (before))
@@ -38,6 +39,7 @@
     (c-offsets-alist . (
 			(substatement-open . 0)
 			(inline-open . 0)
+			(cpp-define-intro . 0)
 			))
     (c-hanging-semi&comma-criteria . (dont-do-it))
     (c-cleanup-list . (
