@@ -9,14 +9,14 @@
   "Use rtags as the checker for flycheck."
   (interactive)
   (flycheck-select-checker 'rtags)
-  
+
   ;; RTags creates more accurate overlays.
   ;;
   (setq-local flycheck-highlighting-mode nil)
   (setq-local flycheck-check-syntax-automatically nil))
 
 (when memsql-path
-  (add-to-list 'load-path (expand-file-name "./utils/" memsql-path))
+  (add-to-list 'load-path (expand-file-name "./utils/private/emacs/rtags" memsql-path))
   (require 'rtags)
   (define-key c-mode-base-map (kbd "M-.") (function rtags-find-symbol-at-point))
   (define-key c-mode-base-map (kbd "C-j C-s") (function rtags-find-symbol))
@@ -39,7 +39,6 @@
   (require 'flycheck-rtags)
   (add-hook 'c-mode-common-hook #'setup-flycheck-rtags)
 )
-(add-to-list 'load-path (concat (getenv "PATH_TO_MEMSQL")))
 
 (provide 'rtags-enable)
 ;;; rtags-enable.el ends here

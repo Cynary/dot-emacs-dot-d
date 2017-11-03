@@ -26,7 +26,7 @@
  '(custom-theme-directory (expand-file-name "./themes" init-path))
  '(package-selected-packages
    (quote
-    (puppet-mode magit elpy whitespace-cleanup-mode flycheck-clang-analyzer autopair flycheck smartparens helm-projectile projectile helm helm-ebdb))))
+    (column-enforce-mode puppet-mode magit elpy whitespace-cleanup-mode flycheck-clang-analyzer autopair flycheck smartparens helm-projectile projectile helm helm-ebdb))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -35,6 +35,10 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; You may have to run package-refresh-contents and restart emacs if this doesn't work the first
+;; time.
+;;
+(package-install-selected-packages)
 (load-theme 'base16-bright-dark)
 
 (require 'random)
@@ -49,6 +53,7 @@
 (require 'python-enable)
 (require 'backups)
 (require 'highlight_words)
+(require 'rtags-enable)
 
 (provide 'init)
 ;;; init.el ends here

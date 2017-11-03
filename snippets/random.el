@@ -40,6 +40,8 @@
 (add-hook 'after-init-hook 'whitespace-cleanup)
 
 (setq-default fill-column 100)
+(setq-default column-enforce-column fill-column)
+(global-column-enforce-mode t)
 
 (global-set-key (kbd "C-c C-x C-c") 'save-buffers-kill-emacs)
 
