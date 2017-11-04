@@ -26,7 +26,7 @@
  '(custom-theme-directory (expand-file-name "./themes" init-path))
  '(package-selected-packages
    (quote
-    (column-enforce-mode puppet-mode magit elpy whitespace-cleanup-mode flycheck-clang-analyzer autopair flycheck smartparens helm-projectile projectile helm helm-ebdb))))
+    (dockerfile-mode column-enforce-mode puppet-mode magit elpy whitespace-cleanup-mode flycheck-clang-analyzer autopair flycheck smartparens helm-projectile projectile helm helm-ebdb))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
