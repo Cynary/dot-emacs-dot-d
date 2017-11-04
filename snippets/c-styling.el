@@ -14,7 +14,9 @@
 				(c-toggle-auto-hungry-state)
 				(subword-mode)
 				(auto-fill-mode)
-			       ))
+				(setq fill-column 120)
+				(setq column-enforce-column fill-column)
+				))
 
 (setq indent-tabs-mode nil)
 (provide 'c-styling)
