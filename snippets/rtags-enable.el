@@ -29,12 +29,8 @@
   (setq rtags-autostart-diagnostics t)
   (rtags-diagnostics)
 
-  ;; We should update to a more modern rtags
-  ;;
-  ;; (require 'helm-rtags)
-  ;; (setq rtags-display-result-backend 'helm)
-  (require 'rtags-helm)
-  (setq rtags-use-helm t)
+  (require 'helm-rtags)
+  (setq rtags-display-result-backend 'helm)
 
   (require 'flycheck-rtags)
   (add-hook 'c-mode-common-hook #'setup-flycheck-rtags)
