@@ -15,7 +15,7 @@
 				(c-toggle-auto-newline)
 				(subword-mode)
 				(auto-fill-mode)
-				(setq fill-column 120)
+				(setq fill-column 112)
 				(setq column-enforce-column fill-column)
 				))
 

@@ -28,7 +28,8 @@
 			       (substatement-open . (before))
 			       (defun-open . (before))
 			       (defun-close . (before))
-			       (block-close . (before))
+			       (block-open)
+			       (block-close)
 			       (class-open . (before))
 			       (inline-open . (before))
 			       (brace-list-open . (before))
@@ -40,6 +41,7 @@
 			(substatement-open . 0)
 			(inline-open . 0)
 			(cpp-define-intro . 0)
+			(label . 0)
 			))
     (c-hanging-semi&comma-criteria . (dont-do-it))
     (c-cleanup-list . (
