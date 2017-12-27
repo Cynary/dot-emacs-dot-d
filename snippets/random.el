@@ -47,5 +47,9 @@
 
 (setq require-final-newline t)
 
+;; Increase number of recentf files to keep.
+;;
+(setq recentf-max-saved-items 1000)
+
 (provide 'random)
 ;;; random.el ends here
